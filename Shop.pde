@@ -10,7 +10,8 @@ class Shop {
       //rect(width/5+width/10,width-width*2/10,height/10,height-height*2/10);   // idk what this is for so im not gonna delete it
 
       //this is where that tab code goes if i want to past it back in
-      menuG.tabs();
+      //menuG.tabs();
+      tabs.display();
       menuG.window();
       iteminfo.display();
     }

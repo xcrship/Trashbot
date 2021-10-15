@@ -3,6 +3,7 @@
 
 void setup() {
   fullScreen();
+  //size (1920, 1080);
   noCursor();
   colorMode(HSB, 360, 100, 100);  
   noStroke();

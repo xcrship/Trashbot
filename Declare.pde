@@ -7,6 +7,26 @@ Shop shop= new Shop();
 Inventory inventory= new Inventory();
 ShipView shipview= new ShipView();
 ItemInfo iteminfo= new ItemInfo();
+Tabs tabs= new Tabs();
+
+color thilight= color(190, 33, 56);
+color tshadow= color(190, 38, 49);
+color t1;
+color t2;
+color t3;
+
+float t1x = width/5 + width/75;
+float t1y = height/15;
+float t1w = width/20;
+float t1h = height/15 + height*0.75/5;
+float t2x = width/5 + width/75;
+float t2y = height*2/15 + height*0.75/5 + height/75;
+float t2w = width/20;
+float t2h = height/15 + height*0.75/5;
+float t3x = width/5 + width/75;
+float t3y = height*2/15 + height*0.75/5 + height/75 + height/15 + height*0.75/5 + height/75;
+float t3w = width/20;
+float t3h = height/15 + height*0.75/5; 
 
 //font sizes
 PFont mcF;
