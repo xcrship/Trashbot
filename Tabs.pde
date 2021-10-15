@@ -24,7 +24,7 @@ class Tabs {
           }
         }
       }
-    }
+    } 
     fill (t1);
     rect(t1x, t1y, t1w, t1h); //tab 1
     fill (t2);
