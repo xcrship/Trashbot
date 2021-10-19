@@ -16,6 +16,8 @@ void setup() {
   window = loadImage("window.png");
   highlightB = loadImage("highlight button.png");
   shadowB = loadImage("shadow button.png");
+  highlightT = loadImage("highlight tab.png");
+  shadowT = loadImage("shadow tab.png");
 
   fabric = loadImage("fabric.png");
   fabricG = loadImage("fabric glow.png");
@@ -66,9 +68,9 @@ void setup() {
 void draw() {
   PFont.list();
   if (scene == 1) {
-    menuS.home();
+    menuS.home(); //Starting Menu
   } else if (scene == 2) {
-    menuG.home();
+    menuG.home(); //Game Menu
     menuG.sidebar();
   } else if (scene == 3) {
   }

@@ -36,6 +36,8 @@ PImage basebase;
 PImage highlightB;
 PImage shadowB;
 PImage window;
+PImage highlightT;
+PImage shadowT;
 
 
 float levelU; //level unlock

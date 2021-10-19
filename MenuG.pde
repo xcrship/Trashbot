@@ -12,7 +12,7 @@ class MenuG {
       shipview.display();
     }
   }
-
+ //all the lag is coming from #shop and #inventory- menuG and sidebar are doing okay
 
   //colors
   //background(190, 45, 41); //background
