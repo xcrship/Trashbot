@@ -11,6 +11,9 @@ void setup() {
 
   mcF = createFont("font.otf", 120);
 
+  sidebar = loadImage("sidebar.png");
+  basebase = loadImage("base base.png");
+
   fabric = loadImage("fabric.png");
   fabricG = loadImage("fabric glow.png");
   glass = loadImage("glass.png");
@@ -67,9 +70,9 @@ void draw() {
   } else if (scene == 3) {
   }
   cursor.make();
-  
+
   //fill(210, 100, 100);
   //textFont(mcF);
   //textSize(60);
-  //text("word", 40, 120); 
+  //text("word", 40, 120);
 }

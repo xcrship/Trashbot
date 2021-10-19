@@ -11,9 +11,9 @@ Tabs tabs= new Tabs();
 
 color thilight= color(190, 33, 56);
 color tshadow= color(190, 38, 49);
-color t1;
-color t2;
-color t3;
+float t1 = 2; //1/2 hilight or shadow (2 is hilight)
+float t2 = 1;
+float t3 = 1;
 
 float t1x = width/5 + width/75;
 float t1y = height/15;
@@ -30,6 +30,12 @@ float t3h = height/15 + height*0.75/5;
 
 //font sizes
 PFont mcF;
+
+PImage sidebar;
+PImage basebase;
+PImage highlightB;
+PImage shadowB;
+
 
 float levelU; //level unlock
 float level; //level select
