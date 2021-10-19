@@ -4,10 +4,13 @@ class MenuG {
   void home() {
     if (menuP < 1) {
       menuP = 1;
+    } else if (menuP == 1) {
+      shop.display();
+    } else if (menuP == 2) {
+      inventory.display();
+    } else if (menuP == 3) {
+      shipview.display();
     }
-    shop.display();
-    inventory.display();
-    shipview.display();
   }
 
 
@@ -37,30 +40,43 @@ class MenuG {
     //rect(0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
 
     if (menuP == 1) {
-      fill(190, 33, 56); //hilight
-      rect(0, height*10/15, width/5, height/15); //shop
-      fill(190, 38, 49); //shadow
-      rect(0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
-      rect(0, height*10/15 + height*3/15, width/5, height/15); //ship view
+      //fill(190, 33, 56); //hilight
+      //rect(0, height*10/15, width/5, height/15); //shop
+      //fill(190, 38, 49); //shadow
+      //rect(0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
+      //rect(0, height*10/15 + height*3/15, width/5, height/15); //ship view
+
+      image(highlightB, 0, height*10/15, width/5, height/15); //shop
+      image(shadowB, 0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
+      image(shadowB, 0, height*10/15 + height*3/15, width/5, height/15); //ship view
     } else if (menuP == 2) {
-      fill(190, 33, 56); //hilight
-      rect(0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
-      fill(190, 38, 49); //shadow
-      rect(0, height*10/15, width/5, height/15); //shop
-      rect(0, height*10/15 + height*3/15, width/5, height/15); //ship view
+      //fill(190, 33, 56); //hilight
+      //rect(0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
+      //fill(190, 38, 49); //shadow
+      //rect(0, height*10/15, width/5, height/15); //shop
+      //rect(0, height*10/15 + height*3/15, width/5, height/15); //ship view
+
+      image(shadowB, 0, height*10/15, width/5, height/15); //shop
+      image(highlightB, 0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
+      image(shadowB, 0, height*10/15 + height*3/15, width/5, height/15); //ship view
     } else if (menuP ==3) {
-      fill(190, 33, 56); //hilight
-      rect(0, height*10/15 + height*3/15, width/5, height/15); //ship view
-      fill(190, 38, 49); //shadow
-      rect(0, height*10/15, width/5, height/15); //shop
-      rect(0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
+      //fill(190, 33, 56); //hilight
+      //rect(0, height*10/15 + height*3/15, width/5, height/15); //ship view
+      //fill(190, 38, 49); //shadow
+      //rect(0, height*10/15, width/5, height/15); //shop
+      //rect(0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
+
+      image(shadowB, 0, height*10/15, width/5, height/15); //shop
+      image(shadowB, 0, height*10/15 + height*1.5/15, width/5, height/15); //inventory
+      image(highlightB, 0, height*10/15 + height*3/15, width/5, height/15); //ship view
     }
   }
 
   void window() {
     //fill(190, 33, 56); //hilight
-    fill(thilight);
-    rect(width/5 + width/20, height/15, width-width/5 - width/15, height - height*2/15); //main base
+    //fill(thilight);
+    //rect(width/5 + width/20, height/15, width-width/5 - width/15, height - height*2/15); //main base
+    image(window, width/5 + width/20, height/15, width-width/5 - width/15, height - height*2/15); //main base
   }
 }
 

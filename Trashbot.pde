@@ -13,6 +13,9 @@ void setup() {
 
   sidebar = loadImage("sidebar.png");
   basebase = loadImage("base base.png");
+  window = loadImage("window.png");
+  highlightB = loadImage("highlight button.png");
+  shadowB = loadImage("shadow button.png");
 
   fabric = loadImage("fabric.png");
   fabricG = loadImage("fabric glow.png");

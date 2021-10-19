@@ -35,6 +35,7 @@ PImage sidebar;
 PImage basebase;
 PImage highlightB;
 PImage shadowB;
+PImage window;
 
 
 float levelU; //level unlock
