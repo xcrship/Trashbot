@@ -18,6 +18,8 @@ void setup() {
   shadowB = loadImage("shadow button.png");
   highlightT = loadImage("highlight tab.png");
   shadowT = loadImage("shadow tab.png");
+  
+  Sbase1 = loadImage("base 1.png");
 
   fabric = loadImage("fabric.png");
   fabricG = loadImage("fabric glow.png");

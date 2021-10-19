@@ -39,6 +39,7 @@ PImage window;
 PImage highlightT;
 PImage shadowT;
 
+PImage S9base1;
 
 float levelU; //level unlock
 float level; //level select
