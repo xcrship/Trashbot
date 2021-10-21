@@ -9,24 +9,15 @@ ShipView shipview= new ShipView();
 ItemInfo iteminfo= new ItemInfo();
 Tabs tabs= new Tabs();
 
-color thilight= color(190, 33, 56);
-color tshadow= color(190, 38, 49);
-float t1 = 2; //1/2 hilight or shadow (2 is hilight)
-float t2 = 1;
-float t3 = 1;
-
-float t1x = width/5 + width/75;
+int tw = width/20;
+int th = height/15 + height/5*3/4;
+float tx = width/5 + width/75;
 float t1y = height/15;
-float t1w = width/20;
-float t1h = height/15 + height*0.75/5;
-float t2x = width/5 + width/75;
 float t2y = height*2/15 + height*0.75/5 + height/75;
-float t2w = width/20;
-float t2h = height/15 + height*0.75/5;
-float t3x = width/5 + width/75;
 float t3y = height*2/15 + height*0.75/5 + height/75 + height/15 + height*0.75/5 + height/75;
-float t3w = width/20;
-float t3h = height/15 + height*0.75/5; 
+
+color thighlight= color(190, 33, 56);
+color tshadow= color(190, 38, 49);
 
 //font sizes
 PFont mcF;
@@ -36,10 +27,11 @@ PImage basebase;
 PImage highlightB;
 PImage shadowB;
 PImage window;
+
 PImage highlightT;
 PImage shadowT;
 
-PImage S9base1;
+PImage Sbase1;
 
 float levelU; //level unlock
 float level; //level select

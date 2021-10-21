@@ -3,7 +3,6 @@
 
 void setup() {
   fullScreen();
-  //size (1920, 1080);
   noCursor();
   colorMode(HSB, 360, 100, 100);  
   noStroke();
@@ -13,12 +12,19 @@ void setup() {
 
   sidebar = loadImage("sidebar.png");
   basebase = loadImage("base base.png");
+  basebase.resize(width, height);
   window = loadImage("window.png");
+  window.resize(width-width/5 - width/15, height - height*2/15);
   highlightB = loadImage("highlight button.png");
+  highlightB.resize(width/5, height/15);
   shadowB = loadImage("shadow button.png");
+  shadowB.resize(width/5, height/15);
+
   highlightT = loadImage("highlight tab.png");
+  highlightT.resize(width/20, height/15 + height/5*3/4);
   shadowT = loadImage("shadow tab.png");
-  
+  shadowT.resize(tw, th);
+
   Sbase1 = loadImage("base 1.png");
 
   fabric = loadImage("fabric.png");
@@ -82,4 +88,8 @@ void draw() {
   //textFont(mcF);
   //textSize(60);
   //text("word", 40, 120);
+  
+  //image(highlightT, 0, 0);
+  image(highlightT, tx, t1y); //tab 1
+  rect(width/5 + width/75, height/15, width/20, height/15 + height*0.75/5);
 }
