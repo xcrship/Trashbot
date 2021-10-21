@@ -11,10 +11,6 @@ Tabs tabs= new Tabs();
 
 int tw = width/20;
 int th = height/15 + height/5*3/4;
-float tx = width/5 + width/75;
-float t1y = height/15;
-float t2y = height*2/15 + height*0.75/5 + height/75;
-float t3y = height*2/15 + height*0.75/5 + height/75 + height/15 + height*0.75/5 + height/75;
 
 color thighlight= color(190, 33, 56);
 color tshadow= color(190, 38, 49);

@@ -23,7 +23,7 @@ void setup() {
   highlightT = loadImage("highlight tab.png");
   highlightT.resize(width/20, height/15 + height/5*3/4);
   shadowT = loadImage("shadow tab.png");
-  shadowT.resize(tw, th);
+  shadowT.resize(width/20, height/15 + height/5*3/4);
 
   Sbase1 = loadImage("base 1.png");
 
@@ -83,13 +83,4 @@ void draw() {
   } else if (scene == 3) {
   }
   cursor.make();
-
-  //fill(210, 100, 100);
-  //textFont(mcF);
-  //textSize(60);
-  //text("word", 40, 120);
-  
-  //image(highlightT, 0, 0);
-  image(highlightT, tx, t1y); //tab 1
-  rect(width/5 + width/75, height/15, width/20, height/15 + height*0.75/5);
 }

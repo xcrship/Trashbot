@@ -19,23 +19,23 @@ class Tabs {
       }
     }
   }
-  void show(){
+  void show() {
     if (tab == 1) {
-      image(highlightT, tx, t1y); //tab 1
-      image(shadowT, tx, t2y); //tab 2
+      image(highlightT, width/5 + width/75, height/15); //tab 1
+      image(shadowT, width/5 + width/75, height*2/15 + height*0.75/5 + height/75); //tab 2
       if (menuP == 2) {
-        image(shadowT, tx, t3y); //tab 3
+        image(shadowT, width/5 + width/75, height*2/15 + height*0.75/5 + height/75 + height/15 + height*0.75/5 + height/75); //tab 3
       }
     } else if (tab == 2) {
-      image(shadowT, tx, t1y); //tab 1
-      image(highlightT, tx, t2y); //tab 2
+      image(shadowT, width/5 + width/75, height/15); //tab 1
+      image(highlightT, width/5 + width/75, height*2/15 + height*0.75/5 + height/75); //tab 2
       if (menuP == 2) {
-        image(shadowT, tx, t3y); //tab 3
+        image(shadowT, width/5 + width/75, height*2/15 + height*0.75/5 + height/75 + height/15 + height*0.75/5 + height/75); //tab 3
       }
     } else if (tab == 3) {
-      image(shadowT, tx, t1y); //tab 1
-      image(shadowT, tx, t2y); //tab 2
-      image(highlightT, tx, t3y); //tab 3
+      image(shadowT, width/5 + width/75, height/15); //tab 1
+      image(shadowT, width/5 + width/75, height*2/15 + height*0.75/5 + height/75); //tab 2
+      image(highlightT, width/5 + width/75, height*2/15 + height*0.75/5 + height/75 + height/15 + height*0.75/5 + height/75); //tab 3
     }
   }
 }
