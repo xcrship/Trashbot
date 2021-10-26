@@ -49,6 +49,8 @@ class MenuG {
     text("shop", width/100, height*10/15+height/100);
     text("inventory", width/100, height*10/15+height*1.5/15+height/100);
     text("ship view", width/100, height*10/15+height*3/15+height/100);
+
+    image(sidebarL, width/5, 0);
   }
 
   void window() {

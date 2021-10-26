@@ -11,6 +11,8 @@ void setup() {
   mcF24 = createFont("font.otf", 24);
 
   sidebar = loadImage("sidebar.png");
+  sidebarL = loadImage("sidebarL.png");
+  sidebarL.resize(width/500,height);
   basebase = loadImage("base base.png");
   basebase.resize(width, height);
   window = loadImage("window.png");

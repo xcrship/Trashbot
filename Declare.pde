@@ -21,6 +21,7 @@ PFont mcF48;
 PFont mcF24;
 
 PImage sidebar;
+PImage sidebarL;
 PImage basebase;
 PImage highlightB;
 PImage shadowB;
