@@ -16,7 +16,9 @@ color thighlight= color(190, 33, 56);
 color tshadow= color(190, 38, 49);
 
 //font sizes
-PFont mcF;
+PFont mcF128;
+PFont mcF48;
+PFont mcF24;
 
 PImage sidebar;
 PImage basebase;

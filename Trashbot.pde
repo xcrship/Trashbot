@@ -1,14 +1,14 @@
-//arrow keys + spacebar-- extra buttons , . / -- work automatically on the game cabinent
-//player two wasd  and something else-- ill work with kess to get it done  --> i dont think i want to do a player two tho so i wont
-
 void setup() {
   fullScreen();
   noCursor();
   colorMode(HSB, 360, 100, 100);  
   noStroke();
   frameRate(60);
+  textAlign(LEFT, TOP);
 
-  mcF = createFont("font.otf", 120);
+  mcF128 = createFont("font.otf", 128);
+  mcF48 = createFont("font.otf", 48);
+  mcF24 = createFont("font.otf", 24);
 
   sidebar = loadImage("sidebar.png");
   basebase = loadImage("base base.png");
