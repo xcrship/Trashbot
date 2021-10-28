@@ -10,22 +10,29 @@ void setup() {
   mcF48 = createFont("font.otf", 48);
   mcF24 = createFont("font.otf", 24);
 
-  sidebar = loadImage("sidebar.png");
-  sidebarL = loadImage("sidebarL.png");
-  sidebarL.resize(width/500,height);
   basebase = loadImage("base base.png");
   basebase.resize(width, height);
-  window = loadImage("window.png");
-  window.resize(width-width/5 - width/15, height - height*2/15);
+
+  sidebar = loadImage("sidebar.png");
+  sidebarL = loadImage("sidebarL.png");
+  sidebarL.resize(width/500, height);
   highlightB = loadImage("highlight button.png");
   highlightB.resize(width/5, height/15);
   shadowB = loadImage("shadow button.png");
   shadowB.resize(width/5, height/15);
 
+  window = loadImage("window.png");
+  window.resize(width-width/5 - width/15, height - height*2/15);
   highlightT = loadImage("highlight tab.png");
   highlightT.resize(width/20, height/15 + height/5*3/4);
   shadowT = loadImage("shadow tab.png");
   shadowT.resize(width/20, height/15 + height/5*3/4);
+  highlightB2 = loadImage("highlight button 2.png");
+  shadowB2 = loadImage("shadow button 2.png");
+  Wbox = loadImage("box.png");
+  Wbox.resize(height/7, height/7);
+  WboxE = loadImage("box expand.png");
+  WboxE.resize(width-width/5 - width/15 -height/7, height/7);
 
   Sbase1 = loadImage("base 1.png");
 

@@ -24,8 +24,12 @@ PImage sidebar;
 PImage sidebarL;
 PImage basebase;
 PImage highlightB;
+PImage highlightB2;
 PImage shadowB;
+PImage shadowB2;
 PImage window;
+PImage Wbox;
+PImage WboxE;
 
 PImage highlightT;
 PImage shadowT;
@@ -73,7 +77,8 @@ float Nradiation;
 PImage wood;
 PImage woodG;
 float Nwood;
-//order: oil, fabric, metal, plastic
+//order: 
+//page 1: oil, fabric, metal, plastic
 //page 2: wood, glass, radiation
 
 //traces
