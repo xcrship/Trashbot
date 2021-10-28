@@ -15,10 +15,12 @@ int th = height/15 + height/5*3/4;
 color thighlight= color(190, 33, 56);
 color tshadow= color(190, 38, 49);
 
-//font sizes
-PFont mcF128;
-PFont mcF48;
-PFont mcF24;
+//font sizes - 24, 48, 128
+//add another font for easier readability -- accessibility option -- all text in same font
+//Pixel Font-- Barcade Brawl Font -- comp. w/several romantic+germanic languages ++ others -- pub domain
+PFont bbF24;
+PFont bbF48;
+PFont bbF128;
 
 PImage sidebar;
 PImage sidebarL;

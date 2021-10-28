@@ -9,7 +9,7 @@ class ItemInfo {
   }
   void images() {
     fill(#FFFFFF);
-    textFont(mcF24);
+    textFont(bbF24);
     textAlign(LEFT, TOP);
     if ((mouseX > width/5+width*3/20-height/14) && (mouseX < width/5+width*3/20+height/14)) {
       if ((mouseY > height/5-height/14) && (mouseY < height/5+height/14)) {

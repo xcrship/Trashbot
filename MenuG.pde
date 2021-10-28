@@ -45,7 +45,7 @@ class MenuG {
       image(highlightB, 0, height*10/15 + height*3/15); //ship view
     }
     fill(#FFFFFF);
-    textFont(mcF48);
+    textFont(bbF24);
     text("shop", width/100, height*10/15+height/100);
     text("inventory", width/100, height*10/15+height*1.5/15+height/100);
     text("ship view", width/100, height*10/15+height*3/15+height/100);

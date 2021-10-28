@@ -6,9 +6,9 @@ void setup() {
   frameRate(60);
   textAlign(LEFT, TOP);
 
-  mcF128 = createFont("font.otf", 128);
-  mcF48 = createFont("font.otf", 48);
-  mcF24 = createFont("font.otf", 24);
+  bbF24 = createFont("bbF.ttf", 24);
+  bbF48 = createFont("bbF.ttf", 48);
+  bbF128 = createFont("bbF.ttf", 128);
 
   basebase = loadImage("base base.png");
   basebase.resize(width, height);
