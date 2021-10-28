@@ -9,6 +9,7 @@ ShipView shipview= new ShipView();
 ItemInfo iteminfo= new ItemInfo();
 Tabs tabs= new Tabs();
 
+
 int tw = width/20;
 int th = height/15 + height/5*3/4;
 
@@ -18,23 +19,35 @@ color tshadow= color(190, 38, 49);
 //font sizes - 24, 48, 128
 //add another font for easier readability -- accessibility option -- all text in same font
 //Pixel Font-- Barcade Brawl Font -- comp. w/several romantic+germanic languages ++ others -- pub domain
+//https://www.fontspace.com/barcade-brawl-font-f31534
+PFont bbF12;
 PFont bbF24;
 PFont bbF48;
 PFont bbF128;
 
+
 PImage sidebar;
 PImage sidebarL;
-PImage basebase;
 PImage highlightB;
-PImage highlightB2;
 PImage shadowB;
-PImage shadowB2;
-PImage window;
-PImage Wbox;
-PImage WboxE;
 
+PImage basebase;
+
+PImage window;
 PImage highlightT;
 PImage shadowT;
+PImage Wbox;
+PImage WboxE;
+PImage highlightB2;
+PImage shadowB2;
+float IIoil = 0;
+float IIwood = 0;
+float IIfabric = 0;
+float IIglass = 0;
+float IImetal = 0;
+float IIradiation = 0;
+float IIplastic = 0;
+
 
 PImage Sbase1;
 

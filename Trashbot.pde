@@ -6,6 +6,7 @@ void setup() {
   frameRate(60);
   textAlign(LEFT, TOP);
 
+  bbF12 = createFont("bbF.ttf", 12);
   bbF24 = createFont("bbF.ttf", 24);
   bbF48 = createFont("bbF.ttf", 48);
   bbF128 = createFont("bbF.ttf", 128);

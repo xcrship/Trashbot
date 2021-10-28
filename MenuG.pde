@@ -46,14 +46,25 @@ class MenuG {
     }
     fill(#FFFFFF);
     textFont(bbF24);
-    text("shop", width/100, height*10/15+height/100);
-    text("inventory", width/100, height*10/15+height*1.5/15+height/100);
-    text("ship view", width/100, height*10/15+height*3/15+height/100);
+    textAlign(LEFT, BOTTOM);
+    text("shop", width/100, height*11/15 - height/250); 
+    text("inventory", width/100, height*11/15 +height*1.5/15 - height/250);
+    text("ship view", width/100, height*11/15 +height*3/15 - height/250);
 
     image(sidebarL, width/5, 0);
   }
 
-  void window() {
+  void windowB() {
     image(window, width/5 + width/20, height/15); //main base
+  }
+
+  void window() {
+    tabs.work();
+    tabs.show();
+    menuG.windowB();
+  }
+
+  void bg() {
+    image(basebase, 0, 0);
   }
 }
