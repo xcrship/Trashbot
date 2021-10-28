@@ -37,19 +37,33 @@ void setup() {
   Sbase1 = loadImage("base 1.png");
 
   fabric = loadImage("fabric.png");
+  fabric.resize(height/7, height/7);
   fabricG = loadImage("fabric glow.png");
+  fabricG.resize(height/7, height/7);
   glass = loadImage("glass.png");
+  glass.resize(height/7, height/7);
   glassG = loadImage("glass glow.png");
+  glassG.resize(height/7, height/7);
   metal = loadImage("metal.png");
+  metal.resize(height/7, height/7);
   metalG = loadImage("metal glow.png");
+  metalG.resize(height/7, height/7);
   oil = loadImage("oil.png");
+  oil.resize(height/7, height/7);
   oilG = loadImage("oil glow.png");
+  oilG.resize(height/7, height/7);
   plastic = loadImage("plastic.png");
+  plastic.resize(height/7, height/7);
   plasticG = loadImage("plastic glow.png");
+  plasticG.resize(height/7, height/7);
   radiation = loadImage("radiation.png");
+  radiation.resize(height/7, height/7);
   radiationG = loadImage("radiation glow.png");
+  radiationG.resize(height/7, height/7);
   wood = loadImage("wood.png");
+  wood.resize(height/7, height/7);
   woodG = loadImage("wood glow.png");
+  woodG.resize(height/7, height/7);
 
   bun = loadImage("bun.png");
   bunG = loadImage("bun glow.png");

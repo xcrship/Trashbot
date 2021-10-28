@@ -81,14 +81,15 @@ float Nwood;
 //page 1: oil, fabric, metal, plastic
 //page 2: wood, glass, radiation
 
-//traces
+//traces -- at least 5 -- preferably like 8
 PImage bun;
 PImage bunG;
-float Nbun; //0 or 1
+float Nbun; //0 or 1 -- desert -- bunker -- girl
+float Nbracelet; //0 or 1 -- forest -- hollow -- jo
 PImage hoot;
 PImage hootG;
-float Nhoot; //0 or 1
-float Nquail; //0 or 1
+float Nhoot; //0 or 1 -- ocean -- boat -- robert
+float Nquail; //0 or 1 -- city -- highrise -- sheri
 
 //credits
 PImage credit;
