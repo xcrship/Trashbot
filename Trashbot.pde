@@ -24,9 +24,9 @@ void setup() {
   window = loadImage("window.png");
   window.resize(width-width/5 - width/15, height - height*2/15);
   highlightT = loadImage("highlight tab.png");
-  highlightT.resize(width/20, height/15 + height/5*3/4);
+  highlightT.resize(width/20 - width/150, height/15 + height/5*3/4);
   shadowT = loadImage("shadow tab.png");
-  shadowT.resize(width/20, height/15 + height/5*3/4);
+  shadowT.resize(width/20 - width/150, height/15 + height/5*3/4);
   highlightB2 = loadImage("highlight button 2.png");
   shadowB2 = loadImage("shadow button 2.png");
   Wbox = loadImage("box.png");

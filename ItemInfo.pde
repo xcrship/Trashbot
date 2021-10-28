@@ -56,7 +56,7 @@ class ItemInfo {
     if (tab == 1) { 
       imageMode (CENTER);
       //image 1 width/5+width*3/20, height/5, height/7, height/7);
-      //image 2 width/5+width*3/20,height*2/5, height/7, height/7);
+      //image 2 width/5+width*3/20, height*2/5, height/7, height/7);
       //image 3 width/5+width*3/20, height*3/5, height/7, height/7);
       //image 4 width/5+width*3/20, height*4/5, height/7, height/7);
 

@@ -82,6 +82,7 @@ float Nwood;
 //page 2: wood, glass, radiation
 
 //traces -- at least 5 -- preferably like 8
+float Nbbear; //0 or 1 -- desert -- dump -- jordan
 PImage bun;
 PImage bunG;
 float Nbun; //0 or 1 -- desert -- bunker -- girl
