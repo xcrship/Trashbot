@@ -66,5 +66,9 @@ class MenuG {
 
   void bg() {
     image(basebase, 0, 0);
+    fill(153, 27, 68);
+    textFont(bbF12);
+    textAlign(RIGHT, BOTTOM);
+    text("01010100 01110010 01100001 01110011 01101000 01100010 01101111 01110100", width - width/100, height - width/100);
   }
 }

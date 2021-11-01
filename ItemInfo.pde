@@ -7,22 +7,26 @@ class ItemInfo {
     iteminfo.info();
   }
   void info() {
+    fill(#FFFFFF);
+    textFont(bbF12);
+    textAlign(LEFT, CENTER);
     if (IIoil == 1) {
-      //oil: commonly found in terran geological formations. can be refined into fuel or other resources. critical environmental impact.
+      text(oilT, width/5+width*3/20-height/14 +height/7 + height/100, height/5);
     } else if (IIwood == 1) {
+      text(woodT, width/5+width*3/20-height/14 +height/7 + height/100, height/5);
     } else if (IIfabric == 1) {
-      //fabric: created out of natural or artificial materials through weaving. used in creating terran attire and other materials. can be broken down into fibers.
+      text(fabricT, width/5+width*3/20-height/14 +height/7 + height/100, height*2/5);
     } else if (IIglass == 1) {
+      text(glassT, width/5+width*3/20-height/14 +height/7 + height/100, height*2/5);
     } else if (IImetal == 1) {
+      text(metalT, width/5+width*3/20-height/14 +height/7 + height/100, height*3/5);
     } else if (IIradiation == 1) {
+      text(radiationT, width/5+width*3/20-height/14 +height/7 + height/100, height*3/5);
     } else if (IIplastic == 1) {
-      //plastic: a synthetic polymer based material that can be formed into objects with various uses. critical environmental impact.
+      text(plasticT, width/5+width*3/20-height/14 +height/7 + height/100, height*4/5);
     }
   }
   void images() {
-    fill(#FFFFFF);
-    textFont(bbF24);
-    textAlign(LEFT, TOP);
     if ((mouseX > width/5+width*3/20-height/14) && (mouseX < width/5+width*3/20+height/14)) {
       if ((mouseY > height/5-height/14) && (mouseY < height/5+height/14)) {
         image(WboxE, width/5+width*3/20-height/14, height/5-height/14); // close enough
@@ -30,9 +34,14 @@ class ItemInfo {
         if (tab==1) {
           image (oilG, width/5+width*3/20, height/5);
           IIoil = 1;
+          IIfabric = 0;
+          IImetal = 0;
+          IIplastic = 0;
         } else if (tab==2) {
           image (woodG, width/5+width*3/20, height/5);
           IIwood = 1;
+          IIglass = 0;
+          IIradiation = 0;
         }
         imageMode(CORNER);
       } else if ((mouseY > height*2/5-height/14) && (mouseY < height*2/5+height/14)) {
@@ -40,10 +49,15 @@ class ItemInfo {
         imageMode(CENTER);
         if (tab==1) {
           image (fabricG, width/5+width*3/20, height*2/5);
+          IIoil = 0;
           IIfabric = 1;
+          IImetal = 0;
+          IIplastic = 0;
         } else if (tab==2) {
           image (glassG, width/5+width*3/20, height*2/5);
+          IIwood = 0;
           IIglass = 1;
+          IIradiation = 0;
         }
         imageMode(CORNER);
       } else if ((mouseY > height*3/5-height/14) && (mouseY < height*3/5+height/14)) {
@@ -51,9 +65,14 @@ class ItemInfo {
         imageMode(CENTER);
         if (tab==1) {
           image (metalG, width/5+width*3/20, height*3/5);
+          IIoil = 0;
+          IIfabric = 0;
           IImetal = 1;
+          IIplastic = 0;
         } else if (tab==2) {
           image (radiationG, width/5+width*3/20, height*3/5);
+          IIwood = 0;
+          IIglass = 0;
           IIradiation = 1;
         }
         imageMode(CORNER);
@@ -62,9 +81,20 @@ class ItemInfo {
         imageMode(CENTER);
         if (tab==1) {
           image (plasticG, width/5+width*3/20, height*4/5);
+          IIoil = 0;
+          IIfabric = 0;
+          IImetal = 0;
           IIplastic = 1;
         }
         imageMode(CORNER);
+      } else {
+        IIoil = 0;
+        IIwood = 0;
+        IIfabric = 0;
+        IIglass = 0;
+        IImetal = 0;
+        IIradiation = 0;
+        IIplastic = 0;
       }
     } else {
       IIoil = 0;
@@ -84,17 +114,17 @@ class ItemInfo {
       //image 3 width/5+width*3/20, height*3/5, height/7, height/7);
       //image 4 width/5+width*3/20, height*4/5, height/7, height/7);
 
-      image (oil, width/5+width*3/20, height/5, height/7, height/7);
-      image (fabric, width/5+width*3/20, height*2/5, height/7, height/7);
-      image (metal, width/5+width*3/20, height*3/5, height/7, height/7);
-      image (plastic, width/5+width*3/20, height*4/5, height/7, height/7);
+      image (oil, width/5+width*3/20, height/5);
+      image (fabric, width/5+width*3/20, height*2/5);
+      image (metal, width/5+width*3/20, height*3/5);
+      image (plastic, width/5+width*3/20, height*4/5);
 
       imageMode (CORNER);
     } else if (tab == 2) {
       imageMode (CENTER);
-      image (wood, width/5+width*3/20, height/5, height/7, height/7);
-      image (glass, width/5+width*3/20, height*2/5, height/7, height/7);
-      image (radiation, width/5+width*3/20, height*3/5, height/7, height/7);
+      image (wood, width/5+width*3/20, height/5);
+      image (glass, width/5+width*3/20, height*2/5);
+      image (radiation, width/5+width*3/20, height*3/5);
 
       imageMode (CORNER);
     }
