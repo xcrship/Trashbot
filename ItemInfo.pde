@@ -2,28 +2,54 @@ class ItemInfo {
   ItemInfo() {
   }
   void display() {
+    iteminfo.bsbuttons();
     iteminfo.boxes();
     iteminfo.images();
     iteminfo.info();
   }
-  void info() {
-    fill(#FFFFFF);
-    textFont(bbF12);
-    textAlign(LEFT, CENTER);
-    if (IIoil == 1) {
-      text(oilT, width/5+width*3/20-height/14 +height/7 + height/100, height/5);
-    } else if (IIwood == 1) {
-      text(woodT, width/5+width*3/20-height/14 +height/7 + height/100, height/5);
-    } else if (IIfabric == 1) {
-      text(fabricT, width/5+width*3/20-height/14 +height/7 + height/100, height*2/5);
-    } else if (IIglass == 1) {
-      text(glassT, width/5+width*3/20-height/14 +height/7 + height/100, height*2/5);
-    } else if (IImetal == 1) {
-      text(metalT, width/5+width*3/20-height/14 +height/7 + height/100, height*3/5);
-    } else if (IIradiation == 1) {
-      text(radiationT, width/5+width*3/20-height/14 +height/7 + height/100, height*3/5);
-    } else if (IIplastic == 1) {
-      text(plasticT, width/5+width*3/20-height/14 +height/7 + height/100, height*4/5);
+  void bsbuttons() {
+    iteminfo.bsbuttreset();
+    if ((mouseX > width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX < width - width/5 + width*3/20 - width/15 - height*3/14 + width/5)) {
+      if ((mouseY > height/5 - height/30) && (mouseY < height/5 - height/30 + height/15)) {
+        Sbutt1 = 1;
+      } else if ((mouseY > height*2/5 - height/30) && (mouseY < height*2/5 - height/30 + height/15)) {
+        Sbutt2 = 1;
+      } else if ((mouseY > height*3/5 - height/30) && (mouseY < height*3/5 - height/30 + height/15)) {
+        Sbutt3 = 1;
+      } else if ((mouseY > height*4/5 - height/30) && (mouseY < height*4/5 - height/30 + height/15)) {
+        Sbutt4 = 1;
+      } else {
+        Sbutt1 = 0;
+      }
+    } 
+    iteminfo.sbuttdis();
+  }
+  void sbuttdis() {
+    if (Sbutt1 == 1) {
+      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+    } else if (Sbutt2 == 1) {
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+    } else if (Sbutt3 == 1) {
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+    } else if (Sbutt4 == 1) {
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+    } else {
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
     }
   }
   void images() {
@@ -129,6 +155,26 @@ class ItemInfo {
       imageMode (CORNER);
     }
   }
+  void info() {
+    fill(#FFFFFF);
+    textFont(bbF12);
+    textAlign(LEFT, CENTER);
+    if (IIoil == 1) {
+      text(oilT, width/5+width*3/20-height/14 +height/7 + height/100, height/5);
+    } else if (IIwood == 1) {
+      text(woodT, width/5+width*3/20-height/14 +height/7 + height/100, height/5);
+    } else if (IIfabric == 1) {
+      text(fabricT, width/5+width*3/20-height/14 +height/7 + height/100, height*2/5);
+    } else if (IIglass == 1) {
+      text(glassT, width/5+width*3/20-height/14 +height/7 + height/100, height*2/5);
+    } else if (IImetal == 1) {
+      text(metalT, width/5+width*3/20-height/14 +height/7 + height/100, height*3/5);
+    } else if (IIradiation == 1) {
+      text(radiationT, width/5+width*3/20-height/14 +height/7 + height/100, height*3/5);
+    } else if (IIplastic == 1) {
+      text(plasticT, width/5+width*3/20-height/14 +height/7 + height/100, height*4/5);
+    }
+  }
   void boxes() {
     //boxes arounde items themselves
     imageMode(CENTER);
@@ -140,5 +186,16 @@ class ItemInfo {
       image(Wbox, width/5+width*3/20, height*4/5); //item 4
     }
     imageMode(CORNER);
+  }
+  void bsbuttreset () {
+    Sbutt1 = 0;
+    Sbutt2 = 0;
+    Sbutt3 = 0;
+    Sbutt4 = 0;
+
+    Bbutt1 = 0;
+    Bbutt2 = 0;
+    Bbutt3 = 0;
+    Bbutt4 = 0;
   }
 }

@@ -29,7 +29,9 @@ void setup() {
   shadowT = loadImage("shadow tab.png");
   shadowT.resize(width/20 - width/150, height/15 + height/5*3/4);
   highlightB2 = loadImage("highlight button 2.png");
+  highlightB2.resize(width/5, height/15);
   shadowB2 = loadImage("shadow button 2.png");
+  shadowB2.resize(width/5, height/15);
   Wbox = loadImage("box.png");
   Wbox.resize(height/7, height/7);
   WboxE = loadImage("box expand.png");
