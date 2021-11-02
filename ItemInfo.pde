@@ -28,74 +28,16 @@ class ItemInfo {
         Bbutt3 = 1;
       }
     } else if ((mouseY > height*4/5 - height/30) && (mouseY < height*4/5 - height/30 + height/15)) {
-      if ((mouseX > width - width/5 + width*3/20 - width/15 - height*3/1) && (mouseX < width - width/5 + width*3/20 - width/15 - height*3/14 + width/5)) {
+      if ((mouseX > width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX < width - width/5 + width*3/20 - width/15 - height*3/14 + width/5)) {
         Sbutt4 = 1;
+        println("Sbutt4 = 1");
       } else if ((mouseX < width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX > width -width*2/5 + width*3/20 - width/15 - height*3/14)) {
         Bbutt4 = 1;
+        println("Bbutt4 = 1");
       }
     } 
     iteminfo.sbuttdis();
     iteminfo.bbuttdis();
-  }
-  void bbuttdis() {
-    if (Bbutt1 == 1) {
-      image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    } else if (Bbutt2 == 1) {
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    } else if (Bbutt3 == 1) {
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    } else if (Bbutt4 == 1) {
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    } else {
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    }
-  }
-  void sbuttdis() {
-    if (Sbutt1 == 1) {
-      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    } else if (Sbutt2 == 1) {
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    } else if (Sbutt3 == 1) {
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    } else if (Sbutt4 == 1) {
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    } else {
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
-    }
-    fill(#FFFFFF);
-    textFont(bbF24);
-    textAlign(RIGHT, BOTTOM);
-    //text("sell", width + width*3/20 - width/15 - height*3/14, height/5);
   }
   void images() {
     if ((mouseX > width/5+width*3/20-height/14) && (mouseX < width/5+width*3/20+height/14)) {
@@ -218,6 +160,140 @@ class ItemInfo {
       text(radiationT, width/5+width*3/20-height/14 +height/7 + height/100, height*3/5);
     } else if (IIplastic == 1) {
       text(plasticT, width/5+width*3/20-height/14 +height/7 + height/100, height*4/5);
+    }
+  }
+  void bbuttdis() {
+    fill(#FFFFFF);
+    textFont(bbF24);
+    textAlign(LEFT, CENTER);
+    if (Bbutt1 == 1) {
+      image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      if (tab == 1) {
+        text("300", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      } else if (tab == 2) {
+        text("700", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      }
+    } else if (Bbutt2 == 1) {
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      if (tab == 1) {
+        text("400", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      } else if (tab == 2) {
+        text("800", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      }
+    } else if (Bbutt3 == 1) {
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      if (tab == 1) {
+        text("500", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      } else if (tab == 2) {
+        text("900", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      }
+    } else if (Bbutt4 == 1) {
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      if (tab == 1) {
+        text("600", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      } else if (tab == 2) {
+        text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      }
+    } else {
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+    }
+  }
+  void sbuttdis() {
+    fill(#FFFFFF);
+    textFont(bbF24);
+    textAlign(LEFT, CENTER);
+    if (Sbutt1 == 1) {
+      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      if (tab == 1) {
+        text("250", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      } else if (tab == 2) {
+        text("450", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      }
+    } else if (Sbutt2 == 1) {
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      if (tab == 1) {
+        text("300", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      } else if (tab == 2) {
+        text("500", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      }
+    } else if (Sbutt3 == 1) {
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      if (tab == 1) {
+        text("350", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      } else if (tab == 2) {
+        text("550", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      }
+    } else if (Sbutt4 == 1) {
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      if (tab == 1) {
+        text("400", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      } else if (tab == 2) {
+        text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      }
+    } else {
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
+      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
     }
   }
   void boxes() {
