@@ -9,6 +9,11 @@ ShipView shipview= new ShipView();
 ItemInfo iteminfo= new ItemInfo();
 Tabs tabs= new Tabs();
 
+//credits
+PImage credit;
+PImage creditG;
+float Ncredit;
+PImage Ccredit;
 
 int tw = width/20;
 int th = height/15 + height/5*3/4;
@@ -125,11 +130,6 @@ PImage hootG;
 float Nhoot; //0 or 1 -- ocean -- boat -- robert
 float Nquail; //0 or 1 -- city -- highrise -- sheri
 
-//credits
-PImage credit;
-PImage creditG;
-float Ncredit;
-PImage Ccredit;
 
 
 class Ncursor {
