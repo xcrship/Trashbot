@@ -130,8 +130,6 @@ PImage hootG;
 float Nhoot; //0 or 1 -- ocean -- boat -- robert
 float Nquail; //0 or 1 -- city -- highrise -- sheri
 
-
-
 class Ncursor {
   Ncursor () {
   }
