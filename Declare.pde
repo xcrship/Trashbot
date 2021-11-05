@@ -142,7 +142,7 @@ float Nquail; //0 or 1 -- city -- highrise -- sheri
 
 //return mouse clicked void here
 void mouseClicked() {
-  if (menuP == 1 || menuP == 2) {
+  if (scene == 2 && (menuP == 1 || menuP == 2)) {
     if ((mouseY > height/5 - height/30) && (mouseY < height/5 - height/30 + height/15)) {
       if ((mouseX > width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX < width - width/5 + width*3/20 - width/15 - height*3/14 + width/5)) {
         if ((tab == 1) && (Noil > 0)) {

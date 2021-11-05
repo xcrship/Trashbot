@@ -11,6 +11,9 @@ void setup() {
   bbF48 = createFont("bbF.ttf", 48);
   bbF128 = createFont("bbF.ttf", 128);
 
+  Sbase1 = loadImage("base 1.png");
+  Sbase1.resize(width, height - height/10);
+
   basebase = loadImage("base base.png");
   basebase.resize(width, height);
 
@@ -40,8 +43,6 @@ void setup() {
   Wbox.resize(height/7, height/7);
   WboxE = loadImage("box expand.png");
   WboxE.resize(width-width/5 - width/15 -height/7, height/7);
-
-  Sbase1 = loadImage("base 1.png");
 
   fabric = loadImage("fabric.png");
   fabric.resize(height/7, height/7);
