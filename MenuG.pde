@@ -7,9 +7,9 @@ class MenuG {
     } else if (menuP == 1) {
       shop.display();
     } else if (menuP == 2) {
-      inventory.display();
-    } else if (menuP == 3) {
       shipview.display();
+    } else if (menuP == 3) {
+      levelselect.display();
     }
   }
   //all the lag is coming from #shop and #inventory- menuG and sidebar are doing okay
@@ -48,8 +48,8 @@ class MenuG {
     textFont(bbF24);
     textAlign(LEFT, BOTTOM);
     text("shop", width/100, height*11/15 - height/250); 
-    text("inventory", width/100, height*11/15 +height*1.5/15 - height/250);
-    text("ship view", width/100, height*11/15 +height*3/15 - height/250);
+    text("ship view", width/100, height*11/15 +height*1.5/15 - height/250);
+    text("start", width/100, height*11/15 +height*3/15 - height/250);
 
     image(sidebarL, width/5, 0);
   }

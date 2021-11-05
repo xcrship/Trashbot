@@ -9,12 +9,10 @@ class Shop {
 }
 
 
-class Inventory {
-  Inventory() {
+class LevelSelect {
+  LevelSelect() {
   }
   void display() {
-    menuG.bg();
-    menuG.window();
-    iteminfo.display();
+    background (210, 0, 0);
   }
 }

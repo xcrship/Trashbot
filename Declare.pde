@@ -4,8 +4,8 @@ Ncursor cursor = new Ncursor();
 MenuG menuG= new MenuG();
 MenuS menuS= new MenuS();
 Shop shop= new Shop();
-Inventory inventory= new Inventory();
 ShipView shipview= new ShipView();
+LevelSelect levelselect = new LevelSelect();
 ItemInfo iteminfo= new ItemInfo();
 Tabs tabs= new Tabs();
 
@@ -75,45 +75,52 @@ float menuP; //shop, inventory, or ship 1-3
 //scrap 
 PImage oil;
 PImage oilG;
-float Noil;
+float Noil = 1;
 float IIoil = 0;
 String oilT = "oil: commonly found in terran geological formations. can be refined \n into fuel or other resources. critical environmental impact.";
+String oilNT;
 
 PImage fabric;
 PImage fabricG;
-float Nfabric;
+float Nfabric = 0;
 float IIfabric = 0;
 String fabricT = "fabric: created out of natural or artificial materials through weaving.\n used in creating terran attire and other materials. can be broken down\n into fibers.";
+String fabricNT;
 
 PImage metal;
 PImage metalG;
 float Nmetal;
 float IImetal = 0;
 String metalT = "metal: a lustrous material with the ability to conduct heat and\n electricity relatively well. often made into alloys such as iron.\n used to construct electronics." ;
+String metalNT;
 
 PImage plastic;
 PImage plasticG;
 float Nplastic;
 float IIplastic = 0;
 String plasticT = "plastic: a synthetic polymer based material that can be formed into\n objects with various uses. critical environmental impact.";
+String plasticNT;
 
 PImage wood;
 PImage woodG;
 float Nwood;
 float IIwood = 0;
 String woodT = "wood: fibrous structural tissue formed by trees and other plants.\n used in construction of various primitive structures by terrans.\n decomposes naturally.";
+String woodNT;
 
 PImage glass;
 PImage glassG;
 float Nglass;
 float IIglass = 0;
 String glassT = "glass: non-crystaline, transparent amorphous solid. has a variety of\n practical, technological, and decorative uses. created from\n terran sands.";
+String glassNT;
 
 PImage radiation;
 PImage radiationG;
 float Nradiation;
 float IIradiation = 0;
 String radiationT = "radiation: in the form of radium, a alkaline terran metal. it is highly\n radioactive, making it useful in energy generation." ;
+String radiationNT;
 
 //order: 
 //page 1: oil, fabric, metal, plastic

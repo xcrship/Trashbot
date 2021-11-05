@@ -2,13 +2,35 @@ class ItemInfo {
   ItemInfo() {
   }
   void display() {
-    iteminfo.bsbuttons();
+    iteminfo.bsbuttdis();
+    iteminfo.qdisplay();
     iteminfo.boxes();
     iteminfo.images();
     iteminfo.info();
   }
-  void bsbuttons() {
-    iteminfo.bsbuttdis();
+  void qdisplay() {
+    oilNT = nf(Noil, 5, 0);
+    fabricNT = nf(Nfabric, 5, 0);
+    metalNT = nf(Nmetal, 5, 0);
+    plasticNT = nf(Nplastic, 5, 0);
+    woodNT = nf(Nwood, 5, 0);
+    glassNT = nf(Nglass, 5, 0);
+    radiationNT = nf(Nradiation, 5, 0);
+
+    //width/5+width*3/20, height*[1, 2, 3, 4]/5 -- height/7
+    fill(#FFFFFF);
+    textFont(bbF24);
+    textAlign(LEFT, CENTER);
+    if (tab==1) {
+      text(oilNT, width/5+width*3/20 + height/7, height/5);
+      text(fabricNT, width/5+width*3/20 + height/7, height*2/5);
+      text(metalNT, width/5+width*3/20 + height/7, height*3/5);
+      text(plasticNT, width/5+width*3/20 + height/7, height*4/5);
+    } else if (tab == 2) {
+      text(woodNT, width/5+width*3/20 + height/7, height/5);
+      text(glassNT, width/5+width*3/20 + height/7, height*2/5);
+      text(radiationNT, width/5+width*3/20 + height/7, height*3/5);
+    }
   }
   void bsbuttdis() {
     iteminfo.bsbuttreset();
@@ -171,12 +193,12 @@ class ItemInfo {
       image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
-      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       if (tab == 1) {
         text("300", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+        image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+        text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       } else if (tab == 2) {
         text("700", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       }
@@ -184,12 +206,12 @@ class ItemInfo {
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
-      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       if (tab == 1) {
         text("400", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+        image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+        text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       } else if (tab == 2) {
         text("800", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
       }
@@ -197,12 +219,12 @@ class ItemInfo {
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
-      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       if (tab == 1) {
         text("500", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+        image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+        text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       } else if (tab == 2) {
         text("900", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
       }
@@ -210,24 +232,24 @@ class ItemInfo {
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
       if (tab == 1) {
+        image(shadowB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
         text("600", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
-      } else if (tab == 2) {
-        text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       }
     } else {
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
       text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
-      text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      if (tab == 1) {
+        image(highlightB2, width -width*2/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+        text(" buy", width - width/5 + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      }
     }
   }
   void sbuttdis() {
@@ -238,12 +260,12 @@ class ItemInfo {
       image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
-      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       if (tab == 1) {
         text("250", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
+        image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+        text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       } else if (tab == 2) {
         text("450", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       }
@@ -251,12 +273,12 @@ class ItemInfo {
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
-      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       if (tab == 1) {
         text("300", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
+        image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+        text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       } else if (tab == 2) {
         text("500", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
       }
@@ -264,12 +286,12 @@ class ItemInfo {
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
-      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       if (tab == 1) {
         text("350", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
+        image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+        text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       } else if (tab == 2) {
         text("550", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
       }
@@ -277,24 +299,24 @@ class ItemInfo {
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
       if (tab == 1) {
+        image(shadowB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
         text("400", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
-      } else if (tab == 2) {
-        text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
       }
     } else {
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height/5 - height/30);
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*2/5 - height/30);
       image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*3/5 - height/30);
-      image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height/5);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*2/5);
       text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*3/5);
-      text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      if (tab == 1) {
+        image(highlightB2, width - width/5 + width*3/20 - width/15 - height*3/14, height*4/5 - height/30);
+        text("sell", width + width*3/20 - width/15 - height*3/14 - width/15, height*4/5);
+      }
     }
   }
   void boxes() {
