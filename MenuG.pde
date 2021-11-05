@@ -2,7 +2,7 @@ class MenuG {
   MenuG () {
   }
   void home() {
-    if (menuP < 1) {
+    if (menuP < 1){
       menuP = 1;
     } else if (menuP == 1) {
       shop.display();
@@ -12,26 +12,35 @@ class MenuG {
       levelselect.display();
     }
   }
-  //all the lag is coming from #shop and #inventory- menuG and sidebar are doing okay
+
+  void sidebargo() {
+      sidebarx = sidebarx - 5;
+      println(sidebarx);
+  }
+
   void cdisplay() {
-    creditNT = nf(Ncredit, 11, 0);
-    if (Ncredit < 0) {
-      Ncredit = 0;
-    }
+    creditNT = nf(Ncredit, 10, 0);
 
     fill(#FFFFFF);
     textFont(bbF24);
     textAlign(LEFT, CENTER);
 
-    text(creditNT, width*2/200, height*2/5);
+    text(creditNT, sidebarx + width*2/200, height*2/5);
+
+    imageMode(CENTER);
+    image (creditG, sidebarx + width/5 - width*2/200 - height/56, height*2/5);
+    imageMode(CORNER);
+
+    image(sidebarL2, sidebarx, height*2/5 + width*2/200);
+    image(sidebarL2, sidebarx, height*2/5 - width*2.25/200);
   }
 
   void sidebar() {
     //fill(190, 55, 33); //dark
     //rect(0, 0, width/5, height);
-    image(sidebar, 0, 0, width/5, height);
+    image(sidebar, sidebarx, 0);
 
-    if (mousePressed) {
+    if (mousePressed && (sidebarx ==0)) {
       if ((mouseX > 0) && (mouseX < width/5)) { //change page
         if ((mouseY > height*10/15) && (mouseY < height*11/15)) {
           menuP = 1;
@@ -44,26 +53,26 @@ class MenuG {
     }
 
     if (menuP == 1) {
-      image(highlightB, 0, height*10/15); //shop
-      image(shadowB, 0, height*10/15 + height*1.5/15); //inventory
-      image(shadowB, 0, height*10/15 + height*3/15); //ship view
+      image(highlightB, sidebarx, height*10/15); //shop
+      image(shadowB, sidebarx, height*10/15 + height*1.5/15); //inventory
+      image(shadowB, sidebarx, height*10/15 + height*3/15); //ship view
     } else if (menuP == 2) {
-      image(shadowB, 0, height*10/15); //shop
-      image(highlightB, 0, height*10/15 + height*1.5/15); //inventory
-      image(shadowB, 0, height*10/15 + height*3/15); //ship view
+      image(shadowB, sidebarx, height*10/15); //shop
+      image(highlightB, sidebarx, height*10/15 + height*1.5/15); //inventory
+      image(shadowB, sidebarx, height*10/15 + height*3/15); //ship view
     } else if (menuP ==3) {
-      image(shadowB, 0, height*10/15); //shop
-      image(shadowB, 0, height*10/15 + height*1.5/15); //inventory
-      image(highlightB, 0, height*10/15 + height*3/15); //ship view
+      image(shadowB, sidebarx, height*10/15); //shop
+      image(shadowB, sidebarx, height*10/15 + height*1.5/15); //inventory
+      image(highlightB, sidebarx, height*10/15 + height*3/15); //ship view
     }
     fill(#FFFFFF);
     textFont(bbF24);
     textAlign(LEFT, BOTTOM);
-    text("shop", width/100, height*11/15 - height/250); 
-    text("ship view", width/100, height*11/15 +height*1.5/15 - height/250);
-    text("start", width/100, height*11/15 +height*3/15 - height/250);
+    text("shop", sidebarx + width/100, height*11/15 - height/250); 
+    text("ship view", sidebarx+ width/100, height*11/15 +height*1.5/15 - height/250);
+    text("start", sidebarx+ width/100, height*11/15 +height*3/15 - height/250);
 
-    image(sidebarL, width/5, 0);
+    image(sidebarL, sidebarx + width/5, 0);
 
     menuG.cdisplay();
   }

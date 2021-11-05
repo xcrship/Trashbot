@@ -14,9 +14,13 @@ void setup() {
   basebase = loadImage("base base.png");
   basebase.resize(width, height);
 
+  sidebarx = 0;
   sidebar = loadImage("sidebar.png");
+  sidebar.resize( width/5, height);
   sidebarL = loadImage("sidebarL.png");
   sidebarL.resize(width/500, height);
+  sidebarL2 = loadImage("sidebarL.png");
+  sidebarL2.resize(width/5, width/500);
   highlightB = loadImage("highlight button.png");
   highlightB.resize(width/5, height/15);
   shadowB = loadImage("shadow button.png");
@@ -75,6 +79,7 @@ void setup() {
 
   credit = loadImage("credits.png");
   creditG = loadImage("credits glow.png");
+  creditG.resize(height/28, height/28);
 
 
   tab = 1;
@@ -96,7 +101,7 @@ void setup() {
   Nhoot = 0;
 
   background (0, 0, 0);
-  
+
   //test only
   Ncredit = 1000000;
   //test setup end

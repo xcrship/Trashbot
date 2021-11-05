@@ -34,6 +34,8 @@ PFont bbF128;
 
 PImage sidebar;
 PImage sidebarL;
+PImage sidebarL2;
+float sidebarx;
 PImage highlightB;
 PImage shadowB;
 
@@ -120,7 +122,7 @@ PImage radiation;
 PImage radiationG;
 float Nradiation;
 float IIradiation = 0;
-String radiationT = "radiation: in the form of radium, a alkaline terran metal. it is highly\n radioactive, making it useful in energy generation." ;
+String radiationT = "radiation: in the form of radium, an alkaline terran metal. it is highly\n radioactive, making it useful in energy generation." ;
 String radiationNT;
 
 //order: 
