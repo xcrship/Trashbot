@@ -96,6 +96,10 @@ void setup() {
   Nhoot = 0;
 
   background (0, 0, 0);
+  
+  //test only
+  Ncredit = 1000000;
+  //test setup end
 }
 
 

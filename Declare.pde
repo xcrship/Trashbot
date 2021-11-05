@@ -14,6 +14,7 @@ PImage credit;
 PImage creditG;
 float Ncredit;
 PImage Ccredit;
+String creditNT; 
 
 int tw = width/20;
 int th = height/15 + height/5*3/4;
@@ -142,15 +143,14 @@ void mouseClicked() {
   if (menuP == 1 || menuP == 2) {
     if ((mouseY > height/5 - height/30) && (mouseY < height/5 - height/30 + height/15)) {
       if ((mouseX > width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX < width - width/5 + width*3/20 - width/15 - height*3/14 + width/5)) {
-        if (tab == 1) {
+        if ((tab == 1) && (Noil > 0)) {
           Noil = Noil - 1;
           Ncredit = Ncredit + 250;
-          println("sell oil");
-        } else if (tab == 2) {
+        } else if ((tab == 2) && (Nwood > 0)) {
           Nwood = Nwood - 1;
           Ncredit = Ncredit + 450;
         }
-      } else if ((mouseX < width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX > width -width*2/5 + width*3/20 - width/15 - height*3/14)) {
+      } else if ((mouseX < width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX > width -width*2/5 + width*3/20 - width/15 - height*3/14) && (Ncredit > 0)) {
         if (tab == 1) {
           Noil = Noil + 1;
           Ncredit = Ncredit - 300;
@@ -161,14 +161,14 @@ void mouseClicked() {
       }
     } else if ((mouseY > height*2/5 - height/30) && (mouseY < height*2/5 - height/30 + height/15)) {
       if ((mouseX > width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX < width - width/5 + width*3/20 - width/15 - height*3/14 + width/5)) {
-        if (tab == 1) {
+        if ((tab == 1) && (Nfabric > 0)) {
           Nfabric = Nfabric - 1;
           Ncredit = Ncredit + 300;
-        } else if (tab == 2) {
+        } else if ((tab == 2) && (Nglass > 0)) {
           Nglass = Nglass - 1;
           Ncredit = Ncredit + 500;
         }
-      } else if ((mouseX < width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX > width -width*2/5 + width*3/20 - width/15 - height*3/14)) {
+      } else if ((mouseX < width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX > width -width*2/5 + width*3/20 - width/15 - height*3/14) && (Ncredit > 0)) {
         if (tab == 1) {
           Nfabric = Nfabric + 1;
           Ncredit = Ncredit - 400;
@@ -179,14 +179,14 @@ void mouseClicked() {
       }
     } else if ((mouseY > height*3/5 - height/30) && (mouseY < height*3/5 - height/30 + height/15)) {
       if ((mouseX > width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX < width - width/5 + width*3/20 - width/15 - height*3/14 + width/5)) {
-        if (tab == 1) {
+        if ((tab == 1)&&(Nmetal > 0)) {
           Nmetal = Nmetal - 1;
           Ncredit = Ncredit + 350;
-        } else if (tab == 2) {
+        } else if ((tab == 2) && (Nradiation > 0)) {
           Nradiation = Nradiation - 1;
           Ncredit = Ncredit + 550;
         }
-      } else if ((mouseX < width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX > width -width*2/5 + width*3/20 - width/15 - height*3/14)) {
+      } else if ((mouseX < width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX > width -width*2/5 + width*3/20 - width/15 - height*3/14) && (Ncredit > 0)) {
         if (tab == 1) {
           Nmetal = Nmetal + 1;
           Ncredit = Ncredit - 500;
@@ -197,12 +197,12 @@ void mouseClicked() {
       }
     } else if ((mouseY > height*4/5 - height/30) && (mouseY < height*4/5 - height/30 + height/15)) {
       if ((mouseX > width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX < width - width/5 + width*3/20 - width/15 - height*3/14 + width/5)) {
-        if (tab == 1) {
+        if ((tab == 1) && (Nplastic > 0)) {
           Nplastic = Nplastic - 1;
           Ncredit = Ncredit + 400;
         }
       } else if ((mouseX < width - width/5 + width*3/20 - width/15 - height*3/14) && (mouseX > width -width*2/5 + width*3/20 - width/15 - height*3/14)) {
-        if (tab == 1) {
+        if ((tab == 1) && (Ncredit > 0)) {
           Nplastic = Nplastic + 1;
           Ncredit = Ncredit - 900;
         }

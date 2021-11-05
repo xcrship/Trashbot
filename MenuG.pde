@@ -13,6 +13,18 @@ class MenuG {
     }
   }
   //all the lag is coming from #shop and #inventory- menuG and sidebar are doing okay
+  void cdisplay() {
+    creditNT = nf(Ncredit, 11, 0);
+    if (Ncredit < 0) {
+      Ncredit = 0;
+    }
+
+    fill(#FFFFFF);
+    textFont(bbF24);
+    textAlign(LEFT, CENTER);
+
+    text(creditNT, width*2/200, height*2/5);
+  }
 
   void sidebar() {
     //fill(190, 55, 33); //dark
@@ -52,6 +64,8 @@ class MenuG {
     text("start", width/100, height*11/15 +height*3/15 - height/250);
 
     image(sidebarL, width/5, 0);
+
+    menuG.cdisplay();
   }
 
   void windowB() {
