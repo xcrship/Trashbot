@@ -49,6 +49,10 @@ PImage WboxE;
 PImage highlightB2;
 PImage shadowB2;
 
+//menu settings
+float tab; //what tab, 1-3
+float menuP; //shop, inventory, or ship 1-3
+
 float Sbutt1 = 0;
 float Sbutt2 = 0;
 float Sbutt3 = 0;
@@ -59,6 +63,15 @@ float Bbutt3 = 0;
 float Bbutt4 = 0;
 
 PImage Sbase1;
+
+//level select
+PImage lbdesert;
+PImage lbforest;
+PImage lbocean;
+PImage lbcity;
+PImage lbcaverns;
+PImage lbnone;
+
 
 float levelU; //level unlock
 float level; //level select
@@ -71,9 +84,6 @@ float levelEU; //friendship bracelet
 
 float scene; //1-3, Start Menu, Game Menu, Game Play
 
-//menu settings
-float tab; //what tab, 1-3
-float menuP; //shop, inventory, or ship 1-3
 
 //scrap 
 PImage oil;
@@ -130,15 +140,15 @@ String radiationNT;
 //page 2: wood, glass, radiation
 
 //traces -- at least 5 -- preferably like 8
-float Nbbear; //0 or 1 -- desert -- dump -- jordan
+float Nbbear = 0; //0 or 1 -- desert -- dump -- jordan
 PImage bun;
 PImage bunG;
-float Nbun; //0 or 1 -- desert -- bunker -- girl
-float Nbracelet; //0 or 1 -- forest -- hollow -- jo
+float Nbun = 0; //0 or 1 -- desert -- bunker -- girl
+float Nbracelet = 0; //0 or 1 -- forest -- hollow -- jo
 PImage hoot;
 PImage hootG;
-float Nhoot; //0 or 1 -- ocean -- boat -- robert
-float Nquail; //0 or 1 -- city -- highrise -- sheri
+float Nhoot = 0; //0 or 1 -- ocean -- boat -- robert
+float Nquail = 0; //0 or 1 -- city -- highrise -- sheri
 
 //return mouse clicked void here
 void mouseClicked() {

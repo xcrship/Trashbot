@@ -81,14 +81,21 @@ void setup() {
   credit = loadImage("credits.png");
   creditG = loadImage("credits glow.png");
   creditG.resize(height/28, height/28);
+  
+  lbdesert = loadImage("lilbox desert.png");
+  lbforest = loadImage("lilbox forest.png");
+  lbocean = loadImage("lilbox ocean.png");
+  lbcity = loadImage("lilbox city.png");
+  lbcaverns = loadImage("lilbox cavern.png"); //caverns -- plural
+  lbnone = loadImage("lilbox none.png");
 
 
   tab = 1;
   menuP = 0;
   scene = 2;
   //scene 1 = starting screen
-  //scene 2 = game menu
-  //scene 3 = gameplay
+  //scene 2 = game menu -- shop, ship view, level selectxs
+  //scene 3 = gameplays
 
   Nfabric = 0;
   Nglass = 0;
@@ -114,7 +121,7 @@ void draw() {
   if (scene == 1) {
     menuS.home(); //Starting Menu
   } else if (scene == 2) {
-    menuG.home(); //Game Menu
+    menuG.home(); //Game Menu (shop, ship view, level select)
     menuG.sidebar();
   } else if (scene == 3) {
   }

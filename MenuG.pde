@@ -2,7 +2,8 @@ class MenuG {
   MenuG () {
   }
   void home() {
-    if (menuP < 1){
+    //menuG.sidebargo();
+    if (menuP < 1) {
       menuP = 1;
     } else if (menuP == 1) {
       shop.display();
@@ -15,7 +16,6 @@ class MenuG {
 
   void sidebargo() {
       sidebarx = sidebarx - 5;
-      println(sidebarx);
   }
 
   void cdisplay() {
