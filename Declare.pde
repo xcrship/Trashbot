@@ -6,6 +6,7 @@ MenuS menuS= new MenuS();
 Shop shop= new Shop();
 ShipView shipview= new ShipView();
 LevelSelect levelselect = new LevelSelect();
+LevelS levels = new LevelS();
 ItemInfo iteminfo= new ItemInfo();
 Tabs tabs= new Tabs();
 
@@ -74,13 +75,14 @@ PImage lbnone;
 
 
 float levelU; //level unlock
-float level; //level select
+float level; //1-5- level select
+float Lcheckpoint; //1-5- checkpoint select
 //hidden levels
-float levelAU; //bun
-float levelBU; 
-float levelCU; //hoot
-float levelDU; //quail
-float levelEU; //friendship bracelet
+float levelAU; //1 or 0- desert- bun
+float levelBU; //1 or 0- forest- friendship bracelet
+float levelCU; //1 or 0- ocean- hoot
+float levelDU; //1 or 0- city- quail
+float levelEU; //1 or 0- caverns- bear
 
 float scene; //1-3, Start Menu, Game Menu, Game Play
 
@@ -140,7 +142,6 @@ String radiationNT;
 //page 2: wood, glass, radiation
 
 //traces -- at least 5 -- preferably like 8
-float Nbbear = 0; //0 or 1 -- desert -- dump -- jordan
 PImage bun;
 PImage bunG;
 float Nbun = 0; //0 or 1 -- desert -- bunker -- girl
@@ -149,6 +150,8 @@ PImage hoot;
 PImage hootG;
 float Nhoot = 0; //0 or 1 -- ocean -- boat -- robert
 float Nquail = 0; //0 or 1 -- city -- highrise -- sheri
+float Nbbear = 0; //0 or 1 -- caverns -- girl -- jordan
+
 
 //return mouse clicked void here
 void mouseClicked() {

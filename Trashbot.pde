@@ -81,7 +81,7 @@ void setup() {
   credit = loadImage("credits.png");
   creditG = loadImage("credits glow.png");
   creditG.resize(height/28, height/28);
-  
+
   lbdesert = loadImage("lilbox desert.png");
   lbforest = loadImage("lilbox forest.png");
   lbocean = loadImage("lilbox ocean.png");
@@ -114,6 +114,7 @@ void setup() {
   Ncredit = 1000000;
   //test setup end
 }
+
 
 
 void draw() {

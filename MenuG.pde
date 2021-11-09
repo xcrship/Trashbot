@@ -11,11 +11,12 @@ class MenuG {
       shipview.display();
     } else if (menuP == 3) {
       levelselect.display();
+      levels.sample();
     }
   }
 
   void sidebargo() {
-      sidebarx = sidebarx - 5;
+    sidebarx = sidebarx - 5;
   }
 
   void cdisplay() {
