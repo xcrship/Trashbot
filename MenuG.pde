@@ -2,12 +2,12 @@ class MenuG {
   MenuG () {
   }
   void home() {
-    //menuG.sidebargo();
     if (menuP < 1) {
       menuP = 1;
     } else if (menuP == 1) {
       shop.display();
     } else if (menuP == 2) {
+      menuG.sidebargo();
       shipview.display();
     } else if (menuP == 3) {
       levelselect.display();
@@ -16,7 +16,11 @@ class MenuG {
   }
 
   void sidebargo() {
-    sidebarx = sidebarx - 5;
+    if ((mouseX > width/5) && (sidebarx > width*-3.75/20)) {
+      sidebarx = sidebarx - width/75;
+    } else if ((mouseX < width*-3.75/20 + width/5) && (sidebarx < 0)) {
+      sidebarx = sidebarx + width/75;
+    }
   }
 
   void cdisplay() {
