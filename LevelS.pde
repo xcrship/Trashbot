@@ -1,6 +1,9 @@
 class LevelS {
   LevelS() {
   }
+  void display(){
+  }
+  
   void sample() {
     background(#000000);
     fill(#FFFFFF);

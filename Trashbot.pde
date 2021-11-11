@@ -35,6 +35,7 @@ void setup() {
   highlightT.resize(width/20 - width/150, height/15 + height/5*3/4);
   shadowT = loadImage("shadow tab.png");
   shadowT.resize(width/20 - width/150, height/15 + height/5*3/4);
+  selectT = loadImage("select tab.png");
   highlightB2 = loadImage("highlight button 2.png");
   highlightB2.resize(width/5, height/15);
   shadowB2 = loadImage("shadow button 2.png");

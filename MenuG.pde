@@ -11,7 +11,6 @@ class MenuG {
       shipview.display();
     } else if (menuP == 3) {
       levelselect.display();
-      levels.sample();
     }
   }
 

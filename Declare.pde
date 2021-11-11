@@ -6,7 +6,7 @@ MenuS menuS= new MenuS();
 Shop shop= new Shop();
 ShipView shipview= new ShipView();
 LevelSelect levelselect = new LevelSelect();
-LevelS levels = new LevelS();
+LevelS levelss = new LevelS();
 ItemInfo iteminfo= new ItemInfo();
 Tabs tabs= new Tabs();
 
@@ -19,9 +19,6 @@ String creditNT;
 
 int tw = width/20;
 int th = height/15 + height/5*3/4;
-
-color thighlight= color(190, 33, 56);
-color tshadow= color(190, 38, 49);
 
 //font sizes - 24, 48, 128
 //add another font for easier readability -- accessibility option -- all text in same font
@@ -45,6 +42,7 @@ PImage basebase;
 PImage window;
 PImage highlightT;
 PImage shadowT;
+PImage selectT;
 PImage Wbox;
 PImage WboxE;
 PImage highlightB2;
