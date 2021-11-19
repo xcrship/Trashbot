@@ -12,8 +12,10 @@ class MenuG {
     } else if (menuP == 3) {
       levelselect.display();
     }
+    menuG.thingselect();
   }
-
+  void thingselect () {
+  }
   void sidebargo() {
     if ((mouseX > width/5) && (sidebarx > width*-3.75/20)) {
       sidebarx = sidebarx - width/75;

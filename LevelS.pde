@@ -2,6 +2,7 @@ class LevelS {
   LevelS() {
   }
   void display(){
+    levels.sample();
   }
   
   void sample() {

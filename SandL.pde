@@ -14,6 +14,6 @@ class LevelSelect {
   }
   void display() {
     background (210, 0, 0);
-    levelss.display();
+    levels.display();
   }
 }

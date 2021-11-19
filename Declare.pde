@@ -6,9 +6,12 @@ MenuS menuS= new MenuS();
 Shop shop= new Shop();
 ShipView shipview= new ShipView();
 LevelSelect levelselect = new LevelSelect();
-LevelS levelss = new LevelS();
+LevelS levels = new LevelS();
 ItemInfo iteminfo= new ItemInfo();
 Tabs tabs= new Tabs();
+
+//move and enter + exit keys
+
 
 //credits
 PImage credit;
@@ -143,7 +146,7 @@ String radiationNT;
 PImage bun;
 PImage bunG;
 float Nbun = 0; //0 or 1 -- desert -- bunker -- girl
-float Nbracelet = 0; //0 or 1 -- forest -- hollow -- jo
+float Nsnakes = 0; //0 or 1 -- forest -- hollow -- jo
 PImage hoot;
 PImage hootG;
 float Nhoot = 0; //0 or 1 -- ocean -- boat -- robert
