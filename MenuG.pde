@@ -2,19 +2,19 @@ class MenuG {
   MenuG () {
   }
   void home() {
-    if (menuP < 1) {
-      menuP = 1;
-    } else if (menuP == 1) {
+    if (menuP == 1) {
       shop.display();
+      menuG.keyselect();
     } else if (menuP == 2) {
       menuG.sidebargo();
       shipview.display();
     } else if (menuP == 3) {
       levelselect.display();
     }
-    menuG.thingselect();
   }
-  void thingselect () {
+
+  void keyselect() {
+    
   }
   void sidebargo() {
     if ((mouseX > width/5) && (sidebarx > width*-3.75/20)) {

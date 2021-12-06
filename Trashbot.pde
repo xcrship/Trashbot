@@ -92,8 +92,7 @@ void setup() {
 
 
   tab = 1;
-  menuP = 0;
-  scene = 2;
+  menuP = 1;
   //scene 1 = starting screen
   //scene 2 = game menu -- shop, ship view, level selectxs
   //scene 3 = gameplays
@@ -114,12 +113,14 @@ void setup() {
   //test only
   Ncredit = 1000000;
   //test setup end
+
+  scene = 2;
 }
 
 
 
 void draw() {
-  PFont.list();
+  //PFont.list();
   if (scene == 1) {
     menuS.home(); //Starting Menu
   } else if (scene == 2) {

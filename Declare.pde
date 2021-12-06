@@ -9,6 +9,7 @@ LevelSelect levelselect = new LevelSelect();
 LevelS levels = new LevelS();
 ItemInfo iteminfo= new ItemInfo();
 Tabs tabs= new Tabs();
+Play play= new Play();
 
 //move and enter + exit keys
 
@@ -54,6 +55,59 @@ PImage shadowB2;
 //menu settings
 float tab; //what tab, 1-3
 float menuP; //shop, inventory, or ship 1-3
+
+//menug select rows and collums -- starts on shop tab 1 select on shop button
+float mgrow = 1; //pg 1-- 1-5, pg 3-- 1-
+float mgcolumn = 1;
+//column 1: Sidebar-- Shop, Shipview, Level Select (1-3)
+
+//menuP == 1
+//column 2: Tabs-- tab 1, tab 2 (1-2) 
+//column 3: Items-- 1-4 -- display each image's info
+//column 4: Buy-- show price
+//column 5: Sell-- show price
+
+//menuP == 3
+//row 1:
+//the rocky badlands -- desert
+//column 2: Level 1.1 -- landing site
+//column 3: Level 1.2 -- whispering barrens
+//column 4: Level 1.3 -- visage overpass
+//column 5: Level 1.4 -- neverending flat
+//column 6: Level 1.5 -- firetooth (bunker)
+
+//irridow's forest
+//column 7: Level 2.1 -- clearing
+//column 8: Level 2.2
+//column 9: Level 2.3
+//column 10: Level 2.4
+//column 11: Level 2.5 -- land's edge
+
+//column 12: Level 3.1 -- point pardon
+//column 13: Level 3.2
+//column 14: Level 3.3
+//column 15: Level 3.4 -- shipwreck
+//column 16: Level 3.5
+
+//bide poleis -- city
+//column 17: Level 4.1 
+//column 18: Level 4.2
+//column 19: Level 4.3 -- upper east thrant
+//column 20: Level 4.4
+//column 21: Level 4.5
+
+//the asphodel haunt -- caverns
+//column 22: Level 5.1 -- the caves
+//column 23: Level 5.2
+//column 24: Level 5.3 
+//column 25: Level 5.4
+//column 26: Level 5.5 -- central chamber
+
+//row 2:
+//column 2: 
+//column 3: waterbury bridge
+//column 4: 
+//column 5: slim island
 
 float Sbutt1 = 0;
 float Sbutt2 = 0;
@@ -146,12 +200,22 @@ String radiationNT;
 PImage bun;
 PImage bunG;
 float Nbun = 0; //0 or 1 -- desert -- bunker -- girl
+
+PImage snakes;
+PImage snakesG;
 float Nsnakes = 0; //0 or 1 -- forest -- hollow -- jo
+
 PImage hoot;
 PImage hootG;
 float Nhoot = 0; //0 or 1 -- ocean -- boat -- robert
+
+PImage quail;
+PImage quailG;
 float Nquail = 0; //0 or 1 -- city -- highrise -- sheri
-float Nbbear = 0; //0 or 1 -- caverns -- girl -- jordan
+
+PImage bear;
+PImage bearG;
+float Nbear = 0; //0 or 1 -- caverns -- girl -- jordan
 
 
 //return mouse clicked void here
