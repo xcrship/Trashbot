@@ -98,6 +98,8 @@ class MenuG {
     fill(153, 27, 68);
     textFont(bbF12);
     textAlign(RIGHT, BOTTOM);
-    text("01010100 01110010 01100001 01110011 01101000 01100010 01101111 01110100", width - width/100, height - width/100);
+    text("00110111 01010010 00110100 00110101 01001000 00111000 00110000 00110111", width - width/100, height - width/100);
+    
+    
   }
 }

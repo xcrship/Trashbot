@@ -117,8 +117,6 @@ void setup() {
   scene = 2;
 }
 
-
-
 void draw() {
   //PFont.list();
   if (scene == 1) {

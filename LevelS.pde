@@ -10,6 +10,8 @@ class LevelS {
     fill(#FFFFFF);
     textFont(bbF24);
     textAlign(CENTER);
+    
+   
     if (level == 1) {
       if (Lcheckpoint == 1) {
         text("Desert: Checkpoint 1", width/2, height/2);

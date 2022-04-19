@@ -69,39 +69,7 @@ float mgcolumn = 1;
 
 //menuP == 3
 //row 1:
-//the rocky badlands -- desert
-//column 2: Level 1.1 -- landing site
-//column 3: Level 1.2 -- whispering barrens
-//column 4: Level 1.3 -- visage overpass
-//column 5: Level 1.4 -- neverending flat
-//column 6: Level 1.5 -- firetooth (bunker)
-
-//irridow's forest
-//column 7: Level 2.1 -- clearing
-//column 8: Level 2.2
-//column 9: Level 2.3
-//column 10: Level 2.4
-//column 11: Level 2.5 -- land's edge
-
-//column 12: Level 3.1 -- point pardon
-//column 13: Level 3.2
-//column 14: Level 3.3
-//column 15: Level 3.4 -- shipwreck
-//column 16: Level 3.5
-
-//bide poleis -- city
-//column 17: Level 4.1 
-//column 18: Level 4.2
-//column 19: Level 4.3 -- upper east thrant
-//column 20: Level 4.4
-//column 21: Level 4.5
-
-//the asphodel haunt -- caverns
-//column 22: Level 5.1 -- the caves
-//column 23: Level 5.2
-//column 24: Level 5.3 
-//column 25: Level 5.4
-//column 26: Level 5.5 -- central chamber
+//checkpoints in order
 
 //row 2:
 //column 2: 
@@ -168,21 +136,21 @@ PImage plastic;
 PImage plasticG;
 float Nplastic;
 float IIplastic = 0;
-String plasticT = "plastic: a synthetic polymer based material that can be formed into\n objects with various uses. critical environmental impact.";
+String plasticT = "plastic: a synthetic polymer-based material that can be formed into\n objects with various uses. critical environmental impact.";
 String plasticNT;
 
 PImage wood;
 PImage woodG;
 float Nwood;
 float IIwood = 0;
-String woodT = "wood: fibrous structural tissue formed by trees and other plants.\n used in construction of various primitive structures by terrans.\n decomposes naturally.";
+String woodT = "wood: fibrous structural tissue formed by trees and other plants.\n used in the construction of various primitive structures by terrans.\n decomposes naturally.";
 String woodNT;
 
 PImage glass;
 PImage glassG;
 float Nglass;
 float IIglass = 0;
-String glassT = "glass: non-crystaline, transparent amorphous solid. has a variety of\n practical, technological, and decorative uses. created from\n terran sands.";
+String glassT = "glass: non-crystalline, transparent amorphous solid. has a variety of\n practical, technological, and decorative uses. created from\n terran sands.";
 String glassNT;
 
 PImage radiation;
