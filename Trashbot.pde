@@ -117,13 +117,14 @@ void setup() {
   Ncredit = 1000000;
   //test setup end
 
-  scene = 2;
+  scene = 1;
 }
 
 void draw() {
   //PFont.list();
   if (scene == 1) {
     menuS.home(); //Starting Menu
+    menuS.demo(); //enable showcase demo
   } else if (scene == 2) {
     menuG.home(); //Game Menu (shop, ship view, level select)
     menuG.sidebar();

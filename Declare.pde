@@ -256,8 +256,16 @@ void mouseClicked() {
         }
       }
     }
+  } else if (scene == 1){
+    if (gallery == 0){
+      gallery = 1;
+    } else if (gallery == 1) {
+    }
   }
 }
+
+float gallery = 0;
+
 
 class Ncursor {
   Ncursor () {
