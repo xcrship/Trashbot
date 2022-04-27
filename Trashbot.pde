@@ -1,7 +1,7 @@
 void setup() {
-  
+
   //test test test
-  
+
   fullScreen();
   noCursor();
   colorMode(HSB, 360, 100, 100);  

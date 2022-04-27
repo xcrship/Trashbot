@@ -256,9 +256,9 @@ void mouseClicked() {
         }
       }
     }
-  } else if (scene == 1){
-    if (gallery == 0){
-      gallery = 1;
+  } else if (scene == 1) {
+    if (gallery == 0) {
+      scene = 2;
     } else if (gallery == 1) {
     }
   }

@@ -14,7 +14,6 @@ class MenuG {
   }
 
   void keyselect() {
-    
   }
   void sidebargo() {
     if ((mouseX > width/5) && (sidebarx > width*-3.75/20)) {
@@ -99,7 +98,5 @@ class MenuG {
     textFont(bbF12);
     textAlign(RIGHT, BOTTOM);
     text("00110111 01010010 00110100 00110101 01001000 00111000 00110000 00110111", width - width/100, height - width/100);
-    
-    
   }
 }
